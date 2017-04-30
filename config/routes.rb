@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   resources :about_us
   resources :contacts
   resources :blogs
+  resources :prices
   resources :home
 end

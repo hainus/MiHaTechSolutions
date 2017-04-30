@@ -60,14 +60,15 @@ header#header
               | Pages
               i.fa.fa-angle-down
             ul.dropdown-menu
+              / li
+              /   a href="blog-item.html"  Blog Single
               li
-                a href="blog-item.html"  Blog Single
-              li
-                a href="pricing.html"  Pricing
-              li
-                a href="404.html"  404
-              li
-                a href="shortcodes.html"  Shortcodes
+                = link_to prices_path
+                  |Pricing
+              / li
+              /   a href="404.html"  404
+              / li
+              /   a href="shortcodes.html"  Shortcodes
           li
             = link_to blogs_path
               |Blog
