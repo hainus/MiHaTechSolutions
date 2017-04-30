@@ -8,11 +8,11 @@ default: &default
 
 development:
   <<: *default
-  database: mihatechSolutions
+  database: mihatech
 test:
   <<: *default
-  database: mihatechSolutions
+  database: mihatech
 
 production:
   <<: *default
-  database: mihatechSolutions
+  database: mihatech
