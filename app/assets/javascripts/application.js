@@ -13,4 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require js/bootstrap.min
+//= require js/html5shiv
+//= require js/jquery.isotope.min
+//= require js/jquery.prettyPhoto
+//= require js/main
+//= require js/respond.min
+//= require js/wow.min
 //= require_tree .
