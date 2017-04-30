@@ -39,14 +39,13 @@ header#header
           span.icon-bar
           span.icon-bar
           span.icon-bar
-        a.navbar-brand href="index.html"
+        = link_to home_index_path, class: "navbar-brand"
           = image_tag "logo.png", class: "img-responsive"
-
-          / img alt="logo" src="images/logo.png" /
       .collapse.navbar-collapse.navbar-right
         ul.nav.navbar-nav
           li.active
-            a href="index.html"  Home
+            = link_to home_index_path
+              |Home
           li
             = link_to about_us_path
               |About Us
