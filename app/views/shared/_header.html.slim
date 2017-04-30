@@ -48,11 +48,14 @@ header#header
           li.active
             a href="index.html"  Home
           li
-            a href="about-us.html"  About Us
+            = link_to about_us_path
+              |About Us
           li
-            a href="services.html"  Services
+            = link_to services_path
+              |Services
           li
-            a href="portfolio.html"  Portfolio
+            = link_to portfolios_path
+              |Portfolio
           li.dropdown
             a.dropdown-toggle data-toggle="dropdown" href="#"
               | Pages
@@ -67,9 +70,11 @@ header#header
               li
                 a href="shortcodes.html"  Shortcodes
           li
-            a href="blog.html"  Blog
+            = link_to blogs_path
+              |Blog
           li
-            a href="contact-us.html"  Contact
+            = link_to contacts_path
+              |Contact
     /! /.container
   /! /nav
 /! /header
