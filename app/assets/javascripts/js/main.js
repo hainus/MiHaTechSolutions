@@ -18,8 +18,9 @@ jQuery(function($) {'use strict',
   });
 
   //Initiat WOW JS
-  new WOW().init();
-
+  $(document).on('turbolinks:load', function() {
+    new WOW().init();
+  });
   // portfolio filter
   $(document).on('turbolinks:load', function() {'use strict';
     var $portfolio_selectors = $('.portfolio-filter >li>a');
