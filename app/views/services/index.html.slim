@@ -5,7 +5,7 @@ section#feature.transparent-bg
       h2 DỊCH VỤ
       p.lead
         | Chúng tôi cam kết cung cấp các sản phẩm và dịch vụ tốt nhất cho quý khách hàng.
-        br/
+        br
         | Sự hài lòng của khách hàng là sự tồn tại của công ty chúng tôi.
     .row
       .features
@@ -55,7 +55,8 @@ section#feature.transparent-bg
         | Chân thành cảm ơn sự tin tưởng của quý khách hàng đã đồnh hành cùng với chúng tôi trong thời gian qua.
       .request
         h4
-          a href="#"  Request a free Quote
+          = link_to contacts_path
+              |Để lại lời nhắn
     /! /.get-started
     .clients-area.center.wow.fadeInDown
       h2 Khách Hàng Nói Về Chúng Tôi
@@ -64,21 +65,21 @@ section#feature.transparent-bg
     .row
       .col-md-4.wow.fadeInDown
         .clients-comments.text-center
-          img.img-circle alt="" src="assets/client1.png" /
+          img.img-circle alt="" src="assets/client1.png"
           h3 Tại MiHaTech các bạn đặt mình vào địa vị của chúng tôi. Hiểu được chúng tôi cần gì, thiết kế website thế nào cho hiệu quả để mạng lại lợi ích tốt nhất cho khách hàng
           h4
             span - Lê Duy/
             | Founder & CEO of pudy.vn
       .col-md-4.wow.fadeInDown
         .clients-comments.text-center
-          img.img-circle alt="" src="assets/client2.png" /
+          img.img-circle alt="" src="assets/client2.png"
           h3 Là khách hàng xây dựng web trọn gói với sản phẩm website của công ty, tôi thấy hoàn toàn với chất lượng và dịch vụ mà Vietnet mang lại, hổ trợ nhiệt tình, triển khai nhanh chóng
           h4
             span -Lâm Quang Vinh /
             | Director of netsvietolutions.com
       .col-md-4.wow.fadeInDown
         .clients-comments.text-center
-          img.img-circle alt="" src="assets/client3.png" /
+          img.img-circle alt="" src="assets/client3.png"
           h3 Hệ thống camera quan sát do MiHaTech thiết kế và lắp đặt hoạt động rất tốt. Cá nhân tôi nhận thấy đội ngũ MiHaTech làm việc rất chuyên nghiệp, tận tâm với khách hàng, hỗ trợ khắc phục sự cố nhanh.
           h4
             span -Trần Hữu Tài /
@@ -164,22 +165,3 @@ section#bottom
             li
               a href="#"  Laboris
       /! /.col-md-3
-/! /#bottom
-footer#footer.midnight-blue
-  .container
-    .row
-      .col-sm-6
-        | \&copy; 2013
-        / = succeed "." do
-        /   a href="http://shapebootstrap.net/" target="_blank" title=("Free Twitter Bootstrap WordPress Themes and HTML templates")  ShapeBootstrap
-        | All Rights Reserved.
-      .col-sm-6
-        ul.pull-right
-          li
-            a href="#"  Home
-          li
-            a href="#"  About Us
-          li
-            a href="#"  Faq
-          li
-            a href="#"  Contact Us
