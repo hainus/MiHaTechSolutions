@@ -55,9 +55,13 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #ADDED GEMS
 gem 'slim-rails', '3.1.0'
 gem 'pg', '~> 0.18.2'
-gem "paperclip", "~> 5.0.0"
+# gem "paperclip", "~> 5.0.0"
 # gem 'devise', '~> 4.2'
 gem "font-awesome-rails"
 gem 'twitter-bootstrap-rails', '~> 3.2.0'
 # gem 'activeadmin', github: 'activeadmin'
 # gem 'cancan', '~> 1.6', '>= 1.6.10'
+gem 'spree', '~> 3.2.0'
+gem 'spree_auth_devise', '~> 3.2.0.beta'
+gem 'spree_gateway', '~> 3.2.0.beta'
+gem 'spree_i18n', github: 'spree-contrib/spree_i18n'
