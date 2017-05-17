@@ -12,15 +12,17 @@
 }
 
 .pricing-area h1 {
-  font-weight: 300;
+  font-weight: 800;
   margin-top: 0;
-  margin-bottom: 15px;
+  font-size: 20px;
+  padding-top: 5px;
+  margin-bottom: 0px;
 }
 
-.pricing-area span {
-  font-weight: 700;
-  font-size: 18px;
-}
+// .pricing-area span {
+//   font-weight: 700;
+//   font-size: 18px;
+// }
 
 .pricing-area h3,
 .pricing-area span  {
@@ -41,8 +43,28 @@
 .pricing-area ul li {
   list-style: none;
   padding: 15px 0;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
+  span{
+    color: red;
+    font-weight: normal;
+  }
+  .fa.fa-check-square-o{
+    color: green;
+    font-size: 18px;
+  }
+  .fa.fa-window-close-o{
+    color: red;
+    font-size: 18px;
+  }
+  .price{
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 0px;
+    font-size: 20px;
+    padding-top: 10px;
+    color: aquamarine;
+  }
 }
 
 .pricing-area ul li:nth-child(even){
@@ -50,7 +72,8 @@
 }
 
 .pricing-area .price-three img,
-.pricing-area .price-six img {
+.pricing-area .price-six img,
+.pricing-area .price-one img {
   position: absolute;
   right: 15px;
   top: 0;
@@ -96,7 +119,7 @@
 
 .pricing-area .heading-five,
 .pricing-area .price-five .plan-action .btn-primary {
-  background: #5c5c5c
+  background: #796fca
 }
 
 .pricing-area .heading-six,
@@ -220,7 +243,7 @@
 .pricing-area .price-five .plan-action .btn-primary:after,
 .pricing-area .price-seven .plan-action .btn-primary:before,
 .pricing-area .price-seven .plan-action .btn-primary:after  {
-  border-color: #424242 transparent transparent;
+  border-color: #796fca transparent transparent;
   right: -9px;
 }
 

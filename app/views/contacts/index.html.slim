@@ -1,7 +1,9 @@
 section#contact-info
   .center.wow.fadeInDown data-wow-delay="300ms" data-wow-duration="1000ms"
-    h2 How to Reach Us?
-    p.lead Lorem ipsum dolor sit amet, consectetur adipisicing elit
+    h2 Liên hệ trực tuyến
+    p.lead
+      |Chân thành cảm ơn quý khách đã dành thời gian cho MIHATECH
+      p Để thuận tiện, quý khách có thể liên lạc với chúng tôi bằng bất kì phương thức nào dưới đây mà quý khách cho là dễ dàng nhất
   .gmap-area.wow.fadeInDown data-wow-delay="400ms" data-wow-duration="1000ms"
     .container
       .row
@@ -56,33 +58,33 @@ section#contact-info
 section#contact-page
   .container
     .center.wow.fadeInDown data-wow-delay="300ms" data-wow-duration="1000ms"
-      h2 Drop Your Message
-      p.lead Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      h2 Để lại lời nhắn
+      p.lead  Các hỗ trợ viên sẽ được thông báo ngay khi quý khách gửi tin và họ sẽ chủ động liên lạc lại với quí khách trong 15 phút.
     .row.contact-wrap.wow.fadeInDown data-wow-delay="300ms" data-wow-duration="1000ms"
       .status.alert.alert-success style=("display: none")
       form#main-contact-form.contact-form action="sendemail.php" method="post" name="contact-form"
         .col-sm-5.col-sm-offset-1
           .form-group
-            label Name *
+            label Họ tên *
             input.form-control name="name" required="required" type="text" /
           .form-group
             label Email *
             input.form-control name="email" required="required" type="email" /
           .form-group
-            label Phone
+            label Số điện thoại *
             input.form-control type="number" /
-          .form-group
-            label Company Name
-            input.form-control type="text" /
+          / .form-group
+          /   label Company Name
+          /   input.form-control type="text" /
         .col-sm-5
           .form-group
-            label Subject *
+            label Tiêu đề *
             input.form-control name="subject" required="required" type="text" /
           .form-group
-            label Message *
+            label Lời nhắn *
             textarea#message.form-control name="message" required="required" rows="8"
           .form-group
-            button.btn.btn-primary.btn-lg name="submit" required="required" type="submit"  Submit Message
+            button.btn.btn-primary.btn-lg name="submit" required="required" type="submit"  Gửi tin
     /! /.row
   /! /.container
 /! /#contact-page

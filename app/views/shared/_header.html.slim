@@ -1,5 +1,61 @@
 header#header
-  .top-bar
+  nav.navbar.navbar-inverse role="banner"
+    .container
+      .navbar-header
+        button.navbar-toggle data-target=".navbar-collapse" data-toggle="collapse" type="button"
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        = link_to home_index_path, class: "navbar-brand"
+          = image_tag "logo1.png", class: "img-responsive logo-image"
+          .slogan
+            |success for your business
+      .collapse.navbar-collapse.navbar-right
+        ul.nav.navbar-nav
+          li.active
+            = link_to home_index_path
+              |TRANG CHỦ
+          / li
+            = link_to about_us_path
+              |About Us
+
+          li
+            = link_to services_path
+              |DỊCH VỤ
+          li
+            = link_to portfolios_path
+              |KHO GIAO DIỆN
+          li
+            = link_to prices_path
+              |BẢNG GIÁ
+          li
+            = link_to contacts_path
+              |LIÊN HỆ
+          li.dropdown
+            a.dropdown-toggle data-toggle="dropdown" href="#"
+              | THÊM
+              i.fa.fa-angle-down
+            ul.dropdown-menu
+              / li
+              /   a href="blog-item.html"  Blog Single
+              li
+                = link_to about_us_path
+                  |GIỚI THIỆU
+              / li
+              /   = link_to contacts_path
+              /     |LIÊN HỆ
+              / li
+              /   a href="404.html"  404
+              / li
+              /   a href="shortcodes.html"  Shortcodes
+          / li
+          /   = link_to blogs_path
+          /     |Blog
+
+    /! /.container
+  /! /nav
+  .bottom-bar
     .container
       .row
         .col-sm-6.col-xs-4
@@ -30,53 +86,4 @@ header#header
                 input.search-form autocomplete="off" placeholder="Search" type="text" /
                 i.fa.fa-search
     /! /.container
-  /! /.top-bar
-  nav.navbar.navbar-inverse role="banner"
-    .container
-      .navbar-header
-        button.navbar-toggle data-target=".navbar-collapse" data-toggle="collapse" type="button"
-          span.sr-only Toggle navigation
-          span.icon-bar
-          span.icon-bar
-          span.icon-bar
-        = link_to home_index_path, class: "navbar-brand"
-          = image_tag "logo.png", class: "img-responsive"
-          / .slogan
-          /   |success for your business
-      .collapse.navbar-collapse.navbar-right
-        ul.nav.navbar-nav
-          li.active
-            = link_to home_index_path
-              |Home
-          li
-            = link_to about_us_path
-              |About Us
-          li
-            = link_to services_path
-              |Services
-          li
-            = link_to portfolios_path
-              |Portfolio
-          li.dropdown
-            a.dropdown-toggle data-toggle="dropdown" href="#"
-              | Pages
-              i.fa.fa-angle-down
-            ul.dropdown-menu
-              / li
-              /   a href="blog-item.html"  Blog Single
-              li
-                = link_to prices_path
-                  |Pricing
-              / li
-              /   a href="404.html"  404
-              / li
-              /   a href="shortcodes.html"  Shortcodes
-          li
-            = link_to blogs_path
-              |Blog
-          li
-            = link_to contacts_path
-              |Contact
-    /! /.container
-  /! /nav
-/! /header
+  /! /.bottom-bar
