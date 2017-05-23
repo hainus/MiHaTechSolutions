@@ -19,5 +19,12 @@
 //= require js/jquery.prettyPhoto
 //= require js/main
 //= require js/respond.min
+//= require js/jquery.easing.1.3
+//= require js/custom
+//= require js/jquery.fancybox.pack
+//= require js/jquery.fancybox-media
+//= require js/jquery.flexslider
+
 //= require js/wow.min
 //= require_tree .
+

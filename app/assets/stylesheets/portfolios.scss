@@ -2,6 +2,71 @@
 ********* Portfolio CSS ******
 **************************/
 
+#portfolio{
+  .container{
+    .title{
+      padding-top: 40px;
+    }
+    .row.projects{
+      height: 100%;
+      .portfolio-items{
+        height: 100%;
+        ul#thumbs.portfolio{
+          .col-lg-4 {
+            height: 290px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//*************** scroll imagge
+.fancybox-outer{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.fancybox-inner{
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0%);
+
+}
+
+.fancybox-image{
+  position: absolute;
+  transition: all 0.2s ease 0s;
+  max-width: 100%;
+  min-height: 200%;
+}
+
+.fancybox-image:hover
+{
+  -moz-animation: border-bounce 5000ms linear;
+  -webkit-animation: border-bounce 5000ms linear;
+}
+@-moz-keyframes border-bounce {
+  0%   { margin-top: -30px;  }
+  25%  { margin-top: -150px; }
+  50%  { margin-top: -300px;  }
+  75%  { margin-top: -150px;  }
+  100% { margin-top: -0px;  }
+}
+@-webkit-keyframes border-bounce {
+  0%   { margin-top: -30px;  }
+  25%  { margin-top: -150px; }
+  50%  { margin-top: -300px;  }
+  75%  { margin-top: -150px;  }
+  100% { margin-top: -0px;  }
+}
+//*************** scroll imagge
+
+
+
+
 #portfolio_page {
   margin-top: 115px;
   padding-bottom: 0;
