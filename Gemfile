@@ -56,8 +56,11 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'slim-rails', '3.1.0'
 gem 'pg', '~> 0.18.2'
 gem "paperclip", "~> 5.0.0"
+gem 'delayed_paperclip', '~> 2.9', '>= 2.9.1'
 # gem 'devise', '~> 4.2'
 gem "font-awesome-rails"
 gem 'twitter-bootstrap-rails', '~> 3.2.0'
-# gem 'activeadmin', github: 'activeadmin'
+gem 'activeadmin', github: 'activeadmin'
 # gem 'cancan', '~> 1.6', '>= 1.6.10'
+
+
