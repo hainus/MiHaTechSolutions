@@ -4,6 +4,7 @@
 
 #portfolio{
   .container{
+    // width: 95%;
     .title{
       padding-top: 40px;
     }
@@ -12,9 +13,18 @@
       .portfolio-items{
         height: 100%;
         ul#thumbs.portfolio{
-          .col-lg-4 {
-            height: 290px;
+          .col-lg-3, img {
+            height: 500px;
+            border-radius: 10px;
           }
+          .overlay-img{
+            border-radius: 10px;
+          }
+          .col-lg-3{
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+
         }
       }
     }
