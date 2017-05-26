@@ -4,34 +4,30 @@
       h2 HƠN 200 GIAO DIỆN WEB CỰC ĐẸP VÀ LIÊN TỤC ĐƯỢC CẬP NHẬT
       p.lead
         | Thay đổi dễ dàng theo phong cách của riêng của bạn
-        / br/
-        / | et dolore magna aliqua. Ut enim ad minim veniam
     .row
       .col-lg-12
         ul.portfolio-filter.text-center.wow.fadeInDown data-wow-delay="400ms" data-wow-duration="1000ms"
           li
-            a.btn.btn-default.active data-filter="*" href="#"  All Works
-          li
-            a.btn.btn-default data-filter=".camera" href="#"  camera
-          li
-            a.btn.btn-default data-filter=".web" href="#"  web
-          li
-            a.btn.btn-default data-filter=".network" href="#"  network Development
+            a.btn.btn-default.active data-filter="*" href="#"  Tất cả
+          - Portfolio.categories.keys.each do |catgory|
+            li
+              a.btn.btn-default data-filter=".#{catgory}" href="#"
+                = Portfolio::WEB_TYPES[catgory.to_sym]
         .clearfix
     .row.projects
       .portfolio-items.wow.fadeInDown data-wow-delay="600ms" data-wow-duration="1000ms"
         ul#thumbs.portfolio
           - @portfolios.each do |portfolio|
-            li.item-thumbs.col-lg-3.col-md-4.col-sm-6.design.portfolio-item.apps class="#{portfolio.category}" data-id="id-0" data-type="web"
+            li.item-thumbs.col-lg-3.col-md-3.col-sm-6.design.portfolio-item.apps class="#{portfolio.category}" data-id="id-0" data-type="web"
               /! Fancybox - Gallery Enabled - Title - Full Image
               a.hover-wrap.fancybox data-fancybox-group="abc" href="#{portfolio.link}" target="_blank"
                 span.overlay-img
                 span.overlay-img-thumb
                   .btn.btn-default
-                    | Thử nghiệm
+                    |  Dùng thử
                     br
-                    |&nbsp;
                     | Mẫu
+                    |&nbsp;
                     span = portfolio.code
               /! Thumb Image and Description
               img alt="demo" src="#{portfolio.theme_image}"

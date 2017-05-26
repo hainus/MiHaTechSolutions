@@ -4,9 +4,30 @@ class Portfolio < ApplicationRecord
 
   # Enum
   enum category: {
-    camera: 1,
-    web: 2,
-    network: 3,
-    security: 4
+    sale: 1,
+    intro: 2,
+    news: 3,
+    album: 4,
+    education: 5,
+    land: 6,
+    restaurant: 7,
+    travel: 8
+  }
+  WEB_TYPES = {
+    sale: 'Bán Hàng',
+    intro: 'Giới Thiệu',
+    news: 'Tin Tức',
+    album: 'Album Ảnh',
+    education: 'Giáo Dục',
+    land: 'Bất Động Sản',
+    restaurant: 'Nhà hàng',
+    travel: 'Du Lịch'
   }
 end
+
+
+
+
+
+
+
