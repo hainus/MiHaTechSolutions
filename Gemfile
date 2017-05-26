@@ -60,6 +60,7 @@ gem 'devise', '~> 4.2'
 gem "font-awesome-rails"
 gem 'twitter-bootstrap-rails', '~> 3.2.0'
 gem 'activeadmin', github: 'activeadmin'
+gem 'aws-sdk', '~> 2.9', '>= 2.9.16'
 # gem 'cancan', '~> 1.6', '>= 1.6.10'
 
 
